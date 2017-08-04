@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/tokbox','TokboxController@index');
+Route::get('/chat','TokboxController@chat');

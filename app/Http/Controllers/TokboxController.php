@@ -31,10 +31,17 @@ class TokboxController extends Controller
             )
         );
 
+        echo "sessionID : " .$sessionId;
+        echo "api_key : " .$api_key;
+        echo "token : " .$token;
 // pass these to your view where you're broadcasting from as you'll need them...
-        return View::make('chat')
+/*        return View::make('chat')
             ->with('session_id', $sessionId)
             ->with('api_key', $api_key)
-            ->with('token', $token);
+            ->with('token', $token);*/
+    }
+
+    public function chat(){
+        return \view('chat');
     }
 }
